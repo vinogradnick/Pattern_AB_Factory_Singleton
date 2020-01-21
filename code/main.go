@@ -177,7 +177,7 @@ func printList(items list.List) {
 	}
 }
 func main() {
-	c := NewGdiConfigurator(IOS_PLATFORM)
+	c := NewGdiConfigurator(ANDROID_PLATFORM)
 	Load(c)
 	GetInstance().platformItems.PushBack(c.Menu)
 	printList(GetInstance().platformItems)
