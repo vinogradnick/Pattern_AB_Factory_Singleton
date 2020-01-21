@@ -1,0 +1,18 @@
+```plantuml
+
+@startuml singleton
+
+ class Instance{
+        +platformItems  List<Button>
+    }
+    class Singleton{
+        +instance Instance
+        GetInstance() Instance
+
+    }
+
+ Singleton <|-- Singleton
+    Singleton ..> Instance
+
+@enduml
+```
